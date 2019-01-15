@@ -1,0 +1,13 @@
+nano loop.sh
+
+#!/bin/bash
+
+for value in {1..4096}
+do
+  /problems/69a376443853a8d385877f60375188bf/bashloop &value
+done
+
+exit nano 
+chmod +x loop.sh
+./loop.sh |grep flag
+flag ={249808e7eba907b7e323f4f2fff2406d}
